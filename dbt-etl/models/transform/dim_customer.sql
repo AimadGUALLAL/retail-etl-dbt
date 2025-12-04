@@ -1,5 +1,6 @@
 -- dim_customer.sql
 -- Create the dimension table
+-- Test the CI/CD pipeline when pushing this update
 WITH customer_cte AS (
   SELECT DISTINCT
     {{ dbt_utils.generate_surrogate_key(['CustomerID', 'Country']) }} as customer_id,
