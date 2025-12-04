@@ -6,7 +6,7 @@ Event-driven data platform for retail analytics on Google Cloud Platform
 
 
 ┌─────────────────────────────────────────────────────────────┐
-│                         DATA FLOW                            │
+│                         DATA FLOW                           │
 └─────────────────────────────────────────────────────────────┘
 
 1. Upload CSV → GCS Bucket
@@ -17,7 +17,7 @@ Event-driven data platform for retail analytics on Google Cloud Platform
 6. Cloud Run → dbt transformations → BigQuery (analytics tables)
 
 ┌─────────────────────────────────────────────────────────────┐
-│                         CI/CD FLOW                           │
+│                         CI/CD FLOW                          │
 └─────────────────────────────────────────────────────────────┘
 
 1. Git Push → GitHub
@@ -28,9 +28,9 @@ Event-driven data platform for retail analytics on Google Cloud Platform
 
 🛠️ Tech Stack
 
-Infrastructure: Terraform
-Storage: Cloud Storage, BigQuery
-Orchestration: Cloud Workflows, Eventarc, Pub/Sub
-Transformation: dbt
-Compute: Cloud Run
-CI/CD: Cloud Build
+# Infrastructure: Terraform
+# Storage: Cloud Storage, BigQuery
+# Orchestration: Cloud Workflows, Eventarc, Pub/Sub
+# Transformation: dbt
+# Compute: Cloud Run
+# CI/CD: Cloud Build synchronized with Github
